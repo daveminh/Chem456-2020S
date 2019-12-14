@@ -1,1 +1,57 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Illinois Institute of Technology
+course_name: Computational Biochemistry and Drug Design
+course_description: "A project-based introduction to computer-aided drug design tools and the principles behind them. Structural alignment and homology modeling. Molecular docking and molecular mechanics force fields for binding enthalpies. Continuum dielectric models of electrostatics and solvation. The Boltzmann distribution and alchemical binding free energy calculations. Quantitative structure property relationships. Business, legal, and ethical considerations of drug development."
+course_semester: "Spring 2020"
+description: |
+    Instructor: David Minh
+
+# message: Register to our Google <a href="https://groups.google.com/forum/#!forum/gp-id">groups page</a> to get course notifications via email.
+baseurl: "/base-url" # the subpath of your site, e.g. /blog/
+url: "http://daveminh.github.io/chem456" # the base hostname & protocol for your site
+githubdir: "daveminh/chem456"
+
+# Author/user information
+email: david.minh@iit.edu
+# twitter_username: username 
+github_username:  daveminh
+authorurl: "http://mypages.iit.edu/~dminh"
+address: |
+    Department of Chemistry
+    Illinois Institute of Technology
+    Chicago IL, 60616 
+    USA
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+future: true
+collections:
+    events:
+        output: false
+    lectures:
+        output: false
+    assignments:
+        output: false
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
+
+
+
+plugins:
+    - jekyll-jalali
