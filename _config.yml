@@ -1,13 +1,13 @@
 # Site settings
 title: Illinois Institute of Technology
-course_name: Computational Biochemistry and Drug Design
+course_name: Chem 456 - Computational Biochemistry and Drug Design
 course_description: "A project-based introduction to computer-aided drug design tools and the principles behind them. Structural alignment and homology modeling. Molecular docking and molecular mechanics force fields for binding enthalpies. Continuum dielectric models of electrostatics and solvation. The Boltzmann distribution and alchemical binding free energy calculations. Quantitative structure property relationships. Business, legal, and ethical considerations of drug development."
 course_semester: "Spring 2020"
 description: |
     Instructor: David Minh
 
 # message: Register to our Google <a href="https://groups.google.com/forum/#!forum/gp-id">groups page</a> to get course notifications via email.
-baseurl: "/Chem456" # the subpath of your site, e.g. /blog/
+baseurl: "/Chem456" # the subpath of your site, e.g. /blog
 url: "http://daveminh.github.io/" # the base hostname & protocol for your site
 githubdir: "daveminh/Chem456"
 
@@ -29,7 +29,10 @@ markdown: kramdown
 permalink: blog/:year/:month/:title
 excerpt_separator: "<!--more-->"
 
-include: ['_images', '_css']
+include:
+  - _images
+  - _css
+  - index.md
 exclude: ['develop']
 
 future: true
@@ -51,7 +54,10 @@ defaults:
     values:
       layout: "assignment"
 
-
+relative_links:
+  enabled: true
+  collections: true
 
 plugins:
     - jekyll-jalali
+    - jekyll-relative-links

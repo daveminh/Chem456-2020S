@@ -1,9 +1,10 @@
-<div class="col col-1" data-label="Event">Lecture</div>
-<div class="col col-1-2" data-label="Date">
-    {{ include.event.date | jdate: "%Y/%m/%e" }}
-    <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
+<div class="col col-1" data-label="Event">{{ include.event.lecture }}</div>
+<div class="col col-1" data-label="Date">
+    {{ include.event.date | date: "%m/%d" }} &
+    {{ include.event.date2 | date: "%m/%d" }}
+<!--    <br class="date-spliter"/>{{ include.event.date | date: "%A" }} -->
 </div>
-<div class="col col-2" data-label="Description">
+<div class="col col-4" data-label="Description">
     {{ include.event.title }}
     <div class="schedule-lecture-links">
     {% include lecture_links.html lecture=include.event %}
@@ -16,7 +17,6 @@
         {% for m in include.event.suggested_readings %}
         <li class="raw_li">{% if m.url %}<a href="{{ m.url }}">{{ m.title }}</a>{% else %}{{ m.title }}{%
             endif %}</li>
-
         {% endfor %}
     </ul>
     {% endif %}

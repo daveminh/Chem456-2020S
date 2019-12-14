@@ -1,10 +1,16 @@
+# Chem 456 course resource page
+
+The resource page is at [https://daveminh.github.io/Chem456/](https://daveminh.github.io/Chem456/).
+
+Here is the Github code for the resource page. It is based on [a jekyll course template](https://github.com/kazemnejad/jekyll-course-website-template). The information below is from the template.
+
 # Features
 - Individual page for assignments, lectures, course material, schedule, final project
 - Auto generated Schedule Page
 - 3 Event type
 - Manual & auto generated announcements (for new lectures and assignments)
 - Support for Persian Calendar
-- Super lightweight 
+- Super lightweight
 - Ready to use in Github Pages
 
 # Demo
@@ -16,7 +22,7 @@ Checkout for a working example at [iust-courses.github.io/ai97](https://iust-cou
 <img src="https://raw.githubusercontent.com/kazemnejad/jekyll-course-website-template/master/_images/schedule_page.jpg" width="400">
 </p>
 
-# Acknowledgement 
+# Acknowledgement
 This template is heavily based on [svmiller / course-website](https://github.com/svmiller/course-website).
 
 
@@ -36,15 +42,15 @@ If you want to add a new lecture, please create an empty file with `.md` postfix
 ```markdown
 ---
 type: lecture
-date: 20xx-xx-xxTx:xx:xx+4:30 
+date: 20xx-xx-xxTx:xx:xx+4:30
 title: <Title of this lecture>
 
 # optional
 suggested_readings:
     - title: Readings 1
-      url: http://example.com  # optional attribute 
+      url: http://example.com  # optional attribute
     - title: Readings 2
-      url: http://example2.com # optional attribute 
+      url: http://example2.com # optional attribute
 
 # optional
 # please use /static_files/presentations directory to store slides
@@ -60,7 +66,7 @@ thumbnail: /static_files/path/to/image.jpg
 
 # optional
 tldr: "What is AI? How does it impact our lives? The current state of the art."
-  
+
 # optional
 # set it to true if you dont want to this lecture appear in the announcements section
 hide_from_announcments: false
@@ -76,7 +82,7 @@ date: 20xx-xx-xxTx:xx:xx+4:30
 <put a short announcement here, you can use all markdown features>
 ```
 
-## Assignments 
+## Assignments
 Use `_assignments/` directory to create new Assignment
 ```markdown
 ---
@@ -146,6 +152,5 @@ hide_from_announcments: false
 ---
 <!-- you can create custom content using markdown. this section will be placed in "Course Materials (in schedule section)" -->
 ## Hello
-this is a custom event with `code` 
+this is a custom event with `code`
 ```
-
