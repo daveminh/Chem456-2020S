@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 6
-date: 2020-2/18T00:00:00+4:30
-date2: 2020-2/20T00:00:00+4:30
+date: 2020-2/18T11:25:00-6
+date2: 2020-2/20T11:25:00-6
 title: Molecular docking. Scoring functions.  Common optimization algorithms.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

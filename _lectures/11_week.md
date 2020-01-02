@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 11
-date: 2020-3/31T00:00:00+4:30
-date2: 2020-4/2T00:00:00+4:30
+date: 2020-3/31T11:25:00-6
+date2: 2020-4/2T11:25:00-6
 title: Pharmaceutical ethics. Access to medicines versus incentivizing research and development. Informed consent in clinical trials.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

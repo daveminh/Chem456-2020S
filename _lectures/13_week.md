@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 13
-date: 2020-4/14T00:00:00+4:30
-date2: 2020-4/16T00:00:00+4:30
+date: 2020-4/14T11:25:00-6
+date2: 2020-4/16T11:25:00-6
 title: Quantitative structure-property relationships. Structural features. Common properties. Machine learning methods.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 10
-date: 2020-3/24T00:00:00+4:30
-date2: 2020-3/26T00:00:00+4:30
+date: 2020-3/24T11:25:00-6
+date2: 2020-3/26T11:25:00-6
 title: Intellectual property. Surveying the patent literature.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

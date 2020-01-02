@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 4
-date: 2020-2/4T00:00:00+4:30
-date2: 2020-2/6T00:00:00+4:30
+date: 2020-2/4T11:25:00-6
+date2: 2020-2/6T11:25:00-6
 title: Present targets to class and external reviewers.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

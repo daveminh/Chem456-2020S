@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 8
-date: 2020-3/3T00:00:00+4:30
-date2: 2020-3/5T00:00:00+4:30
+date: 2020-3/3T11:25:00-6
+date2: 2020-3/5T11:25:00-6
 title: Analysis of molecular dynamics simulations. Equilibration versus production. Visualization of trajectories. Time series and histograms of properties including RMSD, potential energy, and distances. Clustering.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

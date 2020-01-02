@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 5
-date: 2020-2/11T00:00:00+4:30
-date2: 2020-2/13T00:00:00+4:30
+date: 2020-2/11T11:25:00-6
+date2: 2020-2/13T11:25:00-6
 title: Molecular mechanics and molecular dynamics. Force fields. Integrators, thermostats, barostats.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

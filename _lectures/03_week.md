@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 3
-date: 2020-1/28T00:00:00+4:30
-date2: 2020-1/30T00:00:00+4:30
+date: 2020-1/28T11:25:00-6
+date2: 2020-1/30T11:25:00-6
 title: Structural analysis and visualization. Homology modeling, structural alignment, and electrostatics calculations. 
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

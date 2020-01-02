@@ -4,13 +4,13 @@
     {{ include.event.date2 | date: "%m/%d" }}
 <!--    <br class="date-spliter"/>{{ include.event.date | date: "%A" }} -->
 </div>
-<div class="col col-4" data-label="Description">
+<div class="col col-4" data-label="Topics">
     {{ include.event.title }}
     <div class="schedule-lecture-links">
     {% include lecture_links.html lecture=include.event %}
     </div>
 </div>
-<div class="col col-4" data-label="Course Material">
+<div class="col col-4" data-label="Goals">
     {% if include.event.suggested_readings %}
     <p style="margin-bottom: 2px">Suggested Readings:</p>
     <ul>

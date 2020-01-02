@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 9
-date: 2020-3/10T00:00:00+4:30
-date2: 2020-3/12T00:00:00+4:30
+date: 2020-3/10T11:25:00-6
+date2: 2020-3/12T11:25:00-6
 title: Midterm presentations. Binding free energy calculations. Alchemical methods. Thermodynamic cycles.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

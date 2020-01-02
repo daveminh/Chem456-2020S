@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 7
-date: 2020-2/25T00:00:00+4:30
-date2: 2020-2/27T00:00:00+4:30
+date: 2020-2/25T11:25:00-6
+date2: 2020-2/27T11:25:00-6
 title: Analysis of molecular docking. Visualization. Different types of contacts.
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip

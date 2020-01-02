@@ -1,8 +1,8 @@
 ---
 type: lecture
 lecture: 15
-date: 2020-4/28T00:00:00+4:30
-date2: 2020-4/30T00:00:00+4:30
+date: 2020-4/28T11:25:00-6
+date2: 2020-4/30T11:25:00-6
 title: Final presentations
 # slides: https://google.com
 # notes: /static_files/presentations/lec.zip
