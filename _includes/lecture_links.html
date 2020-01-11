@@ -1,11 +1,21 @@
 <div>
-<!--    [<a title="Download slides (pdf)" href="
+    {% if include.lecture.slides %}
+    [<a title="Slides (html)" href="
     {% if include.lecture.slides contains '://' %}
       {{ include.lecture.slides }}
     {% else %}
       {{ include.lecture.slides | prepend: site.baseurl }}
-    {% endif %}">slides</a>] -->
-    {% if include.lecture.notes %}
+    {% endif %}">slides</a>]
+    {% endif %}
+    {% if include.lecture.exercise %}
+    [<a title="Exercise (html)" href="
+    {% if include.lecture.exercise contains '://' %}
+      {{ include.lecture.exercise }}
+    {% else %}
+      {{ include.lecture.exercise | prepend: site.baseurl }}
+    {% endif %}">exercise</a>]
+    {% endif %}
+<!--    {% if include.lecture.notes %}
     [<a title="Download notes (zip)" href="
     {% if include.lecture.notes contains '://' %}
       {{ include.lecture.notes }}
@@ -20,5 +30,5 @@
     {% else %}
       {{ include.lecture.codes | prepend: site.baseurl }}
     {% endif %}">codes</a>]
-    {% endif %}
+    {% endif %} -->
 </div>

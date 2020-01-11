@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Schedule
+title: schedule
 permalink: /schedule/
 ---
 
@@ -8,10 +8,11 @@ permalink: /schedule/
     <ul class="responsive-table" style="margin-left: 0;">
         <li class="table-header">
             <div class="col col-1">Week</div>
-            <div class="col col-1">Dates</div>
+            <div class="col col-1">Date(s)</div>
             <div class="col col-4">Topics</div>
-            <div class="col col-4">Goals</div>
+            <div class="col col-4">Homework</div>
         </li>
+
         {% assign all_events = site.events | concat: site.lectures %}
         {% assign all_events = all_events | concat: site.assignments %}
         {% assign all_events_sorted = all_events | sort: 'date' %}

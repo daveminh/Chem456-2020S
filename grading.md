@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Grading
+title: grading
 ---
 
 Components of the final grade are:

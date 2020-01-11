@@ -1,7 +1,10 @@
-<div class="col col-1" data-label="Event">{{ include.event.lecture }}</div>
+<div class="col col-1" data-label="Event">{{ include.event.week }}</div>
 <div class="col col-1" data-label="Date">
-    {{ include.event.date | date: "%m/%d" }} &
+    {{ include.event.date | date: "%m/%d" }}
+    {% if include.event.date2 %}
+    &
     {{ include.event.date2 | date: "%m/%d" }}
+    {% endif %}
 <!--    <br class="date-spliter"/>{{ include.event.date | date: "%A" }} -->
 </div>
 <div class="col col-4" data-label="Topics">

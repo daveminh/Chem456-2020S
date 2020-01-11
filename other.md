@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Other
+title: other
 ---
 
 # Academic Honesty
 
-Students are expected to adhere to the IIT Code of Academic Honesty (http://www.iit.edu/student_affairs/handbook/information_and_regulations/code_of_academic_honesty.shtml). All violations of academic integrity will be reported to academichonesty@iit.edu.
+Students are expected to adhere to the [IIT Code of Academic Honesty](http://www.iit.edu/student_affairs/handbook/information_and_regulations/code_of_academic_honesty.shtml). All violations of academic integrity will be reported to academichonesty@iit.edu.
 
 # Disabilities
 
