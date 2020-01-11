@@ -1,6 +1,6 @@
 ---
 layout: page
-title: grading
+title: Grading
 permalink: /grading/
 ---
 
