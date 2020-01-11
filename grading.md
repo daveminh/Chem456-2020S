@@ -1,6 +1,7 @@
 ---
 layout: page
 title: grading
+permalink: /grading/
 ---
 
 Components of the final grade are:

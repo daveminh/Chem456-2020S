@@ -1,6 +1,7 @@
 ---
 layout: default
 title: other
+permalink: /other/
 ---
 
 # Academic Honesty
