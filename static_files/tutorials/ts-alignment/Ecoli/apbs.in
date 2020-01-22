@@ -1,0 +1,27 @@
+read
+    mol pqr 6nnr_aligned.pqr
+end
+elec 
+    mg-auto
+    dime 161 193 193
+    cglen 95.8409 121.9087 117.2609
+    fglen 76.3770 91.7110 88.9770
+    cgcent mol 1
+    fgcent mol 1
+    mol 1
+    lpbe
+    bcfl sdh
+    pdie 2.0000
+    sdie 78.5400
+    srfm smol
+    chgm spl2
+    sdens 10.00
+    srad 1.40
+    swin 0.30
+    temp 298.15
+    calcenergy total
+    calcforce no
+    write pot dx 6nnr_aligned.pqr
+end
+print elecEnergy 1 end
+quit
