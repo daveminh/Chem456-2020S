@@ -1,19 +1,35 @@
 <div>
-    {% if include.lecture.slides %}
+    {% if include.lecture.slides_html %}
     [<a title="Slides (html)" href="
-    {% if include.lecture.slides contains '://' %}
-      {{ include.lecture.slides }}
+    {% if include.lecture.slides_html contains '://' %}
+      {{ include.lecture.slides_html }}
     {% else %}
-      {{ include.lecture.slides | prepend: site.baseurl }}
-    {% endif %}">slides</a>]
+      {{ include.lecture.slides_html | prepend: site.baseurl }}
+    {% endif %}">slides (html)</a>]
     {% endif %}
-    {% if include.lecture.exercise %}
-    [<a title="Exercise (html)" href="
-    {% if include.lecture.exercise contains '://' %}
-      {{ include.lecture.exercise }}
+    {% if include.lecture.slides_pdf %}
+    [<a title="Slides (pdf)" href="
+    {% if include.lecture.slides_pdf contains '://' %}
+      {{ include.lecture.slides_pdf }}
     {% else %}
-      {{ include.lecture.exercise | prepend: site.baseurl }}
-    {% endif %}">exercise</a>]
+      {{ include.lecture.slides_pdf | prepend: site.baseurl }}
+    {% endif %}">slides (pdf)</a>]
+    {% endif %}
+    {% if include.lecture.exercise_html %}
+    [<a title="Exercise (html)" href="
+    {% if include.lecture.exercise_html contains '://' %}
+      {{ include.lecture.exercise_html }}
+    {% else %}
+      {{ include.lecture.exercise_html | prepend: site.baseurl }}
+    {% endif %}">exercise (html)</a>]
+    {% endif %}
+    {% if include.lecture.exercise_pdf %}
+    [<a title="Exercise (pdf)" href="
+    {% if include.lecture.exercise_pdf contains '://' %}
+      {{ include.lecture.exercise_pdf }}
+    {% else %}
+      {{ include.lecture.exercise_pdf | prepend: site.baseurl }}
+    {% endif %}">exercise (pdf)</a>]
     {% endif %}
 <!--    {% if include.lecture.notes %}
     [<a title="Download notes (zip)" href="
