@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p RM-shared
+#SBATCH -t 05:00:00
+#SBATCH --ntasks-per-node 14
+
+echo SLURM NTASKS: $SLURM_NTASKS
+
+python create_vina_sh.py --receptor hsg1.pdbqt --library library --config config.txt --nscripts 1 --output docked --cpu $SLURM_NTASKS
+chmod +x ./script0.sh
+source ./script0.sh

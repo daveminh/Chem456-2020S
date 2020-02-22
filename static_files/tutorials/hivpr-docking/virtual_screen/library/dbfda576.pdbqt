@@ -1,0 +1,49 @@
+REMARK  Name = 
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_4
+REMARK    2  A    between atoms: C_7  and  C_8
+REMARK    3  A    between atoms: N_10  and  CA_11
+REMARK    4  A    between atoms: CA_11  and  CB_12
+REMARK    5  A    between atoms: CA_11  and  C_19
+REMARK    6  A    between atoms: CB_12  and  CG_13
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       0.633   0.726  -0.534  0.00  0.00    +0.241 C 
+ATOM      2  N   PHE A   1       0.218  -0.457   0.133  0.00  0.00    -0.195 NA
+ATOM      3  O   UNK A   0      -0.270   1.456  -1.045  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   7
+ATOM      4  C   UNK A   0       4.069  -0.379   0.378  0.00  0.00    +0.000 C 
+ATOM      5  C   UNK A   0       3.482  -0.719  -0.966  0.00  0.00    +0.000 C 
+ATOM      6  C   UNK A   0       2.860   0.526  -1.521  0.00  0.00    +0.009 C 
+ATOM      7  C   UNK A   0       1.989   1.267  -0.572  0.00  0.00    +0.078 C 
+ATOM      8  C   UNK A   0       2.533   1.459   0.800  0.00  0.00    +0.009 C 
+ATOM      9  C   UNK A   0       3.016   0.135   1.320  0.00  0.00    +0.000 C 
+BRANCH   4  11
+ATOM     10  C   UNK A   0       5.159   1.685  -0.228  0.00  0.00    +0.000 C 
+ATOM     11  C   UNK A   0       5.281   0.497   0.302  0.00  0.00    +0.000 C 
+ATOM     12  C   UNK A   0       6.452  -0.247  -0.279  0.00  0.00    +0.000 C 
+ENDBRANCH   4  11
+ENDBRANCH   1   7
+BRANCH   2  13
+ATOM     13  CA  PHE A   1      -0.968  -1.232  -0.562  0.00  0.00    +0.202 C 
+BRANCH  13  14
+ATOM     14  C   PHE A   1      -1.653  -1.733   0.805  0.00  0.00    +0.385 C 
+ATOM     15  OXT PHE A   1      -1.089  -1.533   2.005  0.00  0.00    -0.244 OA
+ATOM     16  O   PHE A   1      -2.147  -2.881   0.576  0.00  0.00    -0.244 OA
+ENDBRANCH  13  14
+BRANCH  13  17
+ATOM     17  CB  PHE A   1      -1.891   0.126  -0.620  0.00  0.00    +0.060 C 
+BRANCH  17  18
+ATOM     18  CG  PHE A   1      -3.312  -0.325  -0.498  0.00  0.00    -0.020 A 
+ATOM     19  CD2 PHE A   1      -3.841  -0.162   0.779  0.00  0.00    -0.004 A 
+ATOM     20  CE2 PHE A   1      -5.156   0.110   1.027  0.00  0.00    -0.000 A 
+ATOM     21  CZ  PHE A   1      -5.876   0.730   0.033  0.00  0.00    -0.000 A 
+ATOM     22  CE1 PHE A   1      -5.321   0.842  -1.235  0.00  0.00    -0.000 A 
+ATOM     23  CD1 PHE A   1      -4.169   0.110  -1.505  0.00  0.00    -0.004 A 
+ENDBRANCH  17  18
+ENDBRANCH  13  17
+ENDBRANCH   2  13
+TORSDOF 6

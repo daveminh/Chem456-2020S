@@ -1,0 +1,711 @@
+MODEL 1
+REMARK VINA RESULT:      -9.0      0.000      0.000
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       4.268   6.160  -8.094  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       2.962   6.623  -7.970  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       2.657   6.911  -6.643  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       3.406   6.390  -5.593  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0       4.254   5.347  -5.951  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0       4.658   5.204  -7.282  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       2.823   6.497  -4.249  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       1.811   5.584  -3.807  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       3.158   7.520  -3.582  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       0.868   6.320  -2.780  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       1.177   5.260  -1.607  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       1.603   5.722  -0.397  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       0.240   4.405  -1.544  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1      -0.457   5.502  -3.312  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1      -1.519   6.527  -3.551  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1      -2.796   5.976  -3.000  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1      -2.811   4.607  -2.747  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1      -3.611   6.707  -2.391  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       4.860   6.469  -9.540  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0       6.230   5.635  -9.224  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0       7.745   6.514 -10.940  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0       7.285   6.135 -10.103  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       4.156   5.201 -10.302  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       3.808   5.780 -11.641  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       2.671   6.501 -11.811  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       1.858   6.232 -12.865  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       2.477   5.856 -14.057  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       1.900   6.290 -15.204  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       0.900   7.186 -15.234  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       0.179   7.382 -14.103  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       0.728   8.135 -16.278  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       3.796   5.540 -14.013  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       0.652   6.922 -12.919  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       0.056   7.284 -11.667  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       4.409   5.386 -12.813  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -8.8      1.419      2.324
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       3.322   6.443  -7.901  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       2.111   6.554  -7.225  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       2.312   6.914  -5.895  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       3.544   6.745  -5.272  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0       4.434   5.929  -5.964  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0       4.274   5.734  -7.339  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       3.565   6.860  -3.808  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       3.037   5.820  -2.977  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       3.933   7.981  -3.348  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       2.479   6.458  -1.647  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       3.620   5.770  -0.740  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       3.982   6.371   0.429  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       3.398   4.523  -0.644  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       1.414   5.223  -1.426  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       0.285   5.466  -2.375  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1      -0.949   5.662  -1.552  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1      -2.056   4.905  -1.921  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1      -0.885   6.099  -0.379  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       3.145   6.716  -9.460  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0       4.611   6.080  -9.800  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0       5.944   7.678 -11.096  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0       5.291   6.970 -10.739  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       2.359   5.320  -9.803  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       1.450   5.726 -10.925  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       1.801   5.506 -12.216  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       1.677   6.508 -13.125  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       0.589   7.367 -12.969  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       0.009   7.823 -14.106  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       0.309   7.355 -15.328  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       1.481   6.693 -15.492  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0      -0.635   7.261 -16.387  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0      -0.104   7.305 -11.805  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       2.163   6.258 -14.404  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       3.282   5.370 -14.510  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       0.394   6.592 -10.765  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -8.7      4.573     10.675
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       0.629   6.270  -7.059  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       1.872   6.592  -7.597  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       1.778   6.833  -8.965  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       0.694   6.384  -9.711  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0      -0.100   5.440  -9.067  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0      -0.083   5.353  -7.671  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       0.840   6.416 -11.172  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       1.724   5.513 -11.847  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       0.261   7.375 -11.764  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       2.271   6.209 -13.152  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       1.604   5.107 -14.121  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       0.694   5.514 -15.051  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       2.502   4.329 -14.568  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       3.705   5.406 -13.056  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       4.425   5.970 -11.873  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       5.862   6.119 -12.263  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       6.495   4.965 -12.716  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       6.333   7.232 -12.595  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.547   6.654  -5.515  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0      -1.082   6.521  -5.507  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0      -1.936   8.516  -4.364  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0      -1.625   7.583  -4.661  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       0.765   5.137  -4.936  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       1.824   5.336  -3.894  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       1.492   5.492  -2.588  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       2.049   6.503  -1.870  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       3.373   6.826  -2.164  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       4.152   7.202  -1.120  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       3.766   7.102   0.163  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       2.441   6.991   0.428  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       4.660   6.825   1.233  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       3.918   6.302  -3.290  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       1.581   6.683  -0.574  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       0.213   6.337  -0.325  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       3.122   5.678  -4.193  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -8.6      2.681      5.488
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0      -0.058   5.636  -6.484  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       0.566   6.457  -5.550  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       0.048   6.248  -4.275  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0      -1.187   5.636  -4.081  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0      -1.971   5.544  -5.227  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0      -1.370   5.600  -6.488  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0      -1.773   5.744  -2.739  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1      -1.373   6.783  -1.838  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0      -2.525   4.787  -2.387  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1      -1.505   6.258  -0.357  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1      -2.146   7.641   0.166  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1      -2.729   7.673   1.398  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1      -1.343   8.598  -0.061  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       0.033   6.713   0.009  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       0.935   5.732  -0.669  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       2.288   6.365  -0.756  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       2.593   6.991  -1.962  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       2.912   6.712   0.274  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.898   5.337  -7.723  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0      -0.352   5.375  -8.774  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0       0.417   4.551 -10.952  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0       0.162   5.084 -10.111  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       1.312   6.894  -8.018  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       2.785   6.795  -8.281  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       3.265   6.794  -9.549  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       4.181   5.862  -9.919  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       5.116   5.482  -8.956  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       6.368   5.213  -9.399  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       6.778   5.465 -10.652  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       5.838   5.630 -11.615  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       8.108   5.845 -10.982  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       4.894   5.865  -7.673  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       4.546   5.839 -11.260  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       3.550   6.236 -12.210  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       3.696   6.397  -7.330  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -8.6      1.949      3.944
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       0.839   5.742  -7.904  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       1.429   6.724  -7.114  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       1.219   6.472  -5.761  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       0.209   5.621  -5.327  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0      -0.736   5.304  -6.298  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0      -0.410   5.424  -7.652  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0      -0.125   5.667  -3.897  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       0.896   5.817  -2.905  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0      -1.331   5.418  -3.604  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       0.438   5.089  -1.582  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       0.343   6.469  -0.756  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1      -0.837   7.152  -0.748  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       0.873   6.322   0.388  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       1.993   4.803  -1.125  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       2.860   5.541  -2.094  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       4.038   6.055  -1.329  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       4.476   7.332  -1.667  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       4.325   5.603  -0.195  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       1.587   5.592  -9.302  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0       2.359   4.238  -8.812  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0       4.696   4.982  -8.833  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0       3.799   4.482  -8.874  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       0.400   4.752 -10.057  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       0.128   5.592 -11.269  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       0.737   5.324 -12.450  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       1.317   6.333 -13.151  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       0.682   7.574 -13.107  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       0.717   8.315 -14.241  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       1.161   7.843 -15.418  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       1.950   6.741 -15.411  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       0.635   8.248 -16.675  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0      -0.297   7.752 -12.184  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       2.026   5.978 -14.293  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       2.660   4.693 -14.288  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0      -0.478   6.826 -11.211  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -8.6      4.520     10.423
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       1.523   6.283  -7.216  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       1.884   4.984  -7.563  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       3.183   4.942  -8.060  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       3.820   6.084  -8.532  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0       2.976   7.168  -8.751  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0       1.743   7.233  -8.094  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       5.049   5.881  -9.311  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       5.196   6.441 -10.620  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       5.887   5.068  -8.818  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       6.133   5.507 -11.478  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       7.275   6.636 -11.616  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       8.348   6.392 -12.421  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       6.735   7.772 -11.786  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       5.390   5.940 -12.881  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       3.936   5.648 -12.695  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       3.345   5.466 -14.058  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       3.876   6.267 -15.065  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       2.767   4.402 -14.380  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.413   6.292  -6.074  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0      -0.549   5.274  -6.917  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0      -2.719   5.780  -5.891  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0      -1.926   5.461  -6.462  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       1.060   5.083  -5.178  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       1.105   5.685  -3.805  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       2.022   6.635  -3.494  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       2.742   6.524  -2.348  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       2.084   5.984  -1.242  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       2.406   6.501  -0.032  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       3.168   7.596   0.124  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       3.957   7.982  -0.908  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       2.995   8.529   1.183  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       0.885   5.384  -1.451  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       3.746   7.463  -2.143  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       4.392   7.986  -3.310  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       0.471   5.133  -2.717  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -8.6      4.479     10.134
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       1.189   6.517  -6.101  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       1.005   5.236  -6.610  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       2.152   4.785  -7.258  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       3.138   5.664  -7.689  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0       2.754   7.001  -7.704  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0       1.690   7.428  -6.904  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       4.138   5.129  -8.623  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       5.223   5.939  -9.089  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       3.893   3.978  -9.093  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       5.628   5.470 -10.540  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       6.937   6.410 -10.569  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       6.805   7.710 -10.958  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       7.608   6.244  -9.504  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       4.670   6.607 -11.244  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       3.890   5.901 -12.307  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       2.449   6.249 -12.100  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       1.721   6.543 -13.248  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       1.830   5.872 -11.077  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.252   6.783  -4.841  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0      -1.080   6.298  -5.654  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0      -2.913   6.730  -4.083  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0      -2.257   6.672  -4.872  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       0.468   5.319  -4.139  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       1.148   5.674  -2.850  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       2.168   6.567  -2.828  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       3.308   6.267  -2.153  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       3.167   5.535  -0.974  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       4.019   5.838   0.035  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       4.842   6.899   0.013  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       5.123   7.469  -1.185  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       5.211   7.631   1.174  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       1.961   4.965  -0.724  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       4.360   7.170  -2.265  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       4.462   7.896  -3.495  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       1.020   4.932  -1.699  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -8.3      2.504      5.032
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0      -0.093   6.015  -6.235  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0       0.283   7.036  -5.368  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0      -0.181   6.794  -4.078  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0      -1.217   5.900  -3.832  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0      -1.935   5.523  -4.963  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0      -1.351   5.640  -6.228  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0      -1.831   5.951  -2.499  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1      -1.434   6.938  -1.540  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0      -2.605   4.991  -2.210  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1      -1.606   6.343  -0.089  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1      -2.314   7.680   0.467  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1      -2.876   7.659   1.709  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1      -1.570   8.684   0.242  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1      -0.099   6.831   0.359  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       0.857   6.152  -0.568  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       2.191   6.802  -0.379  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       2.170   8.147  -0.024  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       3.211   6.126  -0.109  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.925   5.882  -7.453  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0       1.419   4.406  -6.957  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0       3.083   4.491  -5.157  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0       2.521   4.583  -6.013  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0      -0.149   5.263  -8.524  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       0.691   5.069  -9.751  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       2.034   4.906  -9.654  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       2.858   5.627 -10.458  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       2.407   5.880 -11.754  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       3.345   5.883 -12.732  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       4.613   5.486 -12.541  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       5.089   5.445 -11.272  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       5.395   4.845 -13.541  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       1.105   5.621 -12.033  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       4.223   5.503 -10.230  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       4.634   5.245  -8.882  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       0.245   5.343 -11.023  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -8.2      4.817     10.592
+REMARK  Name = 
+REMARK  11 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_2  and  C_3
+REMARK    2  A    between atoms: C_3  and  C_4
+REMARK    3  A    between atoms: C_4  and  C_5
+REMARK    4  A    between atoms: C_4  and  C_18
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_21  and  C_22
+REMARK    7  A    between atoms: N_24  and  CA_25
+REMARK    8  A    between atoms: CA_25  and  CB_26
+REMARK    9  A    between atoms: CA_25  and  C_31
+REMARK   10  A    between atoms: CB_26  and  CG_27
+REMARK   11  A    between atoms: CG_27  and  CD_28
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK A   0       0.831   6.527  -7.000  0.00  0.00    -0.021 A 
+ATOM      2  C   UNK A   0      -0.242   5.844  -7.564  0.00  0.00    -0.004 A 
+ATOM      3  C   UNK A   0       0.138   5.194  -8.735  0.00  0.00    +0.004 A 
+ATOM      4  C   UNK A   0       1.289   5.554  -9.427  0.00  0.00    +0.055 A 
+ATOM      5  C   UNK A   0       1.836   6.775  -9.044  0.00  0.00    +0.004 A 
+ATOM      6  C   UNK A   0       1.543   7.303  -7.783  0.00  0.00    -0.004 A 
+ENDROOT
+BRANCH   4   7
+ATOM      7  C   UNK A   0       1.431   5.028 -10.792  0.00  0.00    +0.265 C 
+ATOM      8  N   GLU A   1       2.518   5.433 -11.631  0.00  0.00    -0.192 NA
+ATOM      9  O   UNK A   0       0.464   4.329 -11.216  0.00  0.00    -0.268 OA
+BRANCH   8  10
+ATOM     10  CA  GLU A   1       2.049   5.391 -13.136  0.00  0.00    +0.199 C 
+BRANCH  10  11
+ATOM     11  C   GLU A   1       3.545   5.603 -13.696  0.00  0.00    +0.384 C 
+ATOM     12  OXT GLU A   1       4.489   4.655 -13.431  0.00  0.00    -0.244 OA
+ATOM     13  O   GLU A   1       3.500   5.976 -14.909  0.00  0.00    -0.244 OA
+ENDBRANCH  10  11
+BRANCH  10  14
+ATOM     14  CB  GLU A   1       1.708   7.000 -13.142  0.00  0.00    +0.045 C 
+BRANCH  14  15
+ATOM     15  CG  GLU A   1       0.329   7.137 -13.705  0.00  0.00    +0.116 C 
+BRANCH  15  16
+ATOM     16  CD  GLU A   1       0.476   7.424 -15.166  0.00  0.00    +0.365 C 
+ATOM     17  OE2 GLU A   1       1.179   8.579 -15.493  0.00  0.00    -0.246 OA
+ATOM     18  OE1 GLU A   1       0.392   6.510 -16.020  0.00  0.00    -0.246 OA
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  10  14
+ENDBRANCH   8  10
+ENDBRANCH   4   7
+BRANCH   1  19
+ATOM     19  C   UNK A   0       0.657   6.681  -5.424  0.00  0.00    +0.041 C 
+BRANCH  19  20
+ATOM     20  C   UNK A   0      -0.947   6.385  -5.511  0.00  0.00    +0.082 C 
+BRANCH  20  22
+ATOM     21  C   UNK A   0      -1.860   8.344  -4.353  0.00  0.00    -0.014 C 
+ATOM     22  C   UNK A   0      -1.648   7.425  -4.760  0.00  0.00    -0.078 C 
+ENDBRANCH  20  22
+ENDBRANCH  19  20
+BRANCH  19  23
+ATOM     23  C   UNK A   0       1.016   5.128  -5.046  0.00  0.00    +0.053 C 
+BRANCH  23  24
+ATOM     24  C   UNK A   0       2.047   5.285  -3.968  0.00  0.00    +0.079 A 
+ATOM     25  N   UNK A   0       1.677   5.485  -2.678  0.00  0.00    -0.242 NA
+ATOM     26  C   UNK A   0       2.265   6.475  -1.957  0.00  0.00    +0.151 A 
+ATOM     27  C   UNK A   0       3.616   6.716  -2.206  0.00  0.00    +0.186 A 
+ATOM     28  N   UNK A   0       4.377   7.066  -1.141  0.00  0.00    -0.190 NA
+ATOM     29  C   UNK A   0       3.939   7.013   0.128  0.00  0.00    +0.259 A 
+ATOM     30  N   UNK A   0       2.602   6.983   0.345  0.00  0.00    -0.191 NA
+ATOM     31  N   UNK A   0       4.777   6.705   1.235  0.00  0.00    -0.086 NA
+ATOM     32  N   UNK A   0       4.170   6.141  -3.303  0.00  0.00    -0.222 NA
+ATOM     33  C   UNK A   0       1.762   6.706  -0.682  0.00  0.00    +0.193 A 
+ATOM     34  N   UNK A   0       0.368   6.443  -0.478  0.00  0.00    -0.105 NA
+ATOM     35  C   UNK A   0       3.372   5.546  -4.224  0.00  0.00    +0.115 A 
+ENDBRANCH  23  24
+ENDBRANCH  19  23
+ENDBRANCH   1  19
+TORSDOF 11
+ENDMDL

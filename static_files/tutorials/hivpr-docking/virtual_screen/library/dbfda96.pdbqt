@@ -1,0 +1,34 @@
+REMARK  Name = 
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_3  and  C_4
+REMARK    2  A    between atoms: C_11  and  S_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      -3.786  -1.384   0.851  0.00  0.00    +0.117 C 
+ATOM      2  N   UNL     1      -2.976  -0.342   0.568  0.00  0.00    -0.134 NA
+ATOM      3  S   UNL     1      -1.486  -0.685   1.258  0.00  0.00    +0.066 S 
+ATOM      4  O   UNL     1      -1.482   0.037   2.589  0.00  0.00    -0.153 OA
+ATOM      5  O   UNL     1      -1.140  -2.115   1.437  0.00  0.00    -0.153 OA
+ATOM      6  C   UNL     1      -0.239   0.042   0.301  0.00  0.00    +0.138 A 
+ATOM      7  C   UNL     1      -0.531   0.176  -1.053  0.00  0.00    +0.086 A 
+ATOM      8  C   UNL     1       0.515   0.274  -1.919  0.00  0.00    +0.030 A 
+ATOM      9  C   UNL     1       1.836   0.184  -1.493  0.00  0.00    +0.078 A 
+ATOM     10  C   UNL     1       2.053   0.416  -0.140  0.00  0.00    +0.137 A 
+ATOM     11 CL   UNL     1       3.068  -0.675  -2.402  0.00  0.00    -0.081 Cl
+ATOM     12  N   UNL     1      -1.857   0.653  -1.240  0.00  0.00    -0.219 NA
+ATOM     13  C   UNL     1       0.986   0.415   0.751  0.00  0.00    +0.042 A 
+ATOM     14  C   UNL     1      -2.900  -0.519  -1.004  0.00  0.00    +0.187 C 
+ENDROOT
+BRANCH  10  15
+ATOM     15  S   UNL     1       3.649   0.286   0.588  0.00  0.00    +0.094 S 
+ATOM     16  O   UNL     1       3.670   1.329   1.685  0.00  0.00    -0.150 OA
+ATOM     17  O   UNL     1       3.741  -1.082   1.226  0.00  0.00    -0.150 OA
+ATOM     18  N   UNL     1       4.898   0.530  -0.560  0.00  0.00    +0.039 NA
+ENDBRANCH  10  15
+BRANCH  14  19
+ATOM     19  C   UNL     1      -4.176   0.518  -1.219  0.00  0.00    +0.135 C 
+ATOM     20 CL   UNL     1      -3.841   1.942  -0.225  0.00  0.00    -0.110 Cl
+ENDBRANCH  14  19
+TORSDOF 2

@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -p RM-shared
+#SBATCH -t 05:00:00
+#SBATCH --ntasks-per-node 14
+
+echo SLURM NTASKS: $SLURM_NTASKS
+
+python create_vina_sh.py --receptor hsg1.pdbqt --library library --config config.txt --nscripts $SLURM_NTASKS --output docked
+
+# TODO: The script yields an error when run on Bridges:
+# numactl: execution of `/home/dminh/virtual_screen/script0.sh': No such file or directory
+
+P=`pwd`
+i=0
+while [ $i -lt $SLURM_NTASKS ]
+do
+     chmod +x $P/script$i.sh
+     numactl -C +$i $P/script$i.sh &
+     let i=i+1
+done
+
+wait # IMPORTANT: wait for all to finish or get killed

@@ -1,0 +1,17 @@
+REMARK  Name = 
+REMARK  1 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_2  and  C_4
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CB  ALA A   1      -1.303   1.174  -0.171  0.00  0.00    +0.033 C 
+ATOM      2  CA  ALA A   1      -0.688  -0.274  -0.750  0.00  0.00    +0.194 C 
+ATOM      3  N   ALA A   1      -1.255  -1.075   0.521  0.00  0.00    -0.121 NA
+ENDROOT
+BRANCH   2   4
+ATOM      4  C   ALA A   1       0.767  -0.035  -0.030  0.00  0.00    +0.382 C 
+ATOM      5  OXT ALA A   1       0.763   0.439   1.232  0.00  0.00    -0.244 OA
+ATOM      6  O   ALA A   1       1.716  -0.230  -0.802  0.00  0.00    -0.244 OA
+ENDBRANCH   2   4
+TORSDOF 1
