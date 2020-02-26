@@ -4,7 +4,6 @@ import simtk.openmm as mm
 from simtk import unit
 from sys import stdout
 
-# TODO: Test loading result from PDB2PQR for adding hydrogens
 pdb = app.PDBFile('../0-propka/1ubq.pqr')
 forcefield = app.ForceField('amber14-all.xml', 'amber14/tip3p.xml')
 
