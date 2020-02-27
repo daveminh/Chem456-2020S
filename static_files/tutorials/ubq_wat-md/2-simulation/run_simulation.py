@@ -1,14 +1,29 @@
-﻿from __future__ import print_function
+from __future__ import print_function
 from simtk.openmm import app
 import simtk.openmm as mm
 from simtk import unit
 from sys import stdout
 import os
 
+# Argument parser
+
+import argparse
+parser = argparse.ArgumentParser(\
+  description = 'Runs an MD simulation in explicit solvent.' + \
+    'Loads a .PDB file from from ../../1-model-water/[system_name].pdb.' + \
+    'Stores simulation results in the local directory.')
+parser.add_argument('--system_name', \
+  default='1ubq', \
+  help='The name of the system.')
+parser.add_argument('--simulation_time',
+  type=int, \
+  default=100, \
+  help='The amount of time to simulate, in nanoseconds.')
+args = parser.parse_args()
+
 # Input files
 
-system_name = '1ubq'
-pdb = app.PDBFile('../1-model_water/'+system_name+'.pdb')
+pdb = app.PDBFile('../../1-model_water/'+args.system_name+'.pdb')
 forcefield = app.ForceField('amber14-all.xml', 'amber14/tip3p.xml')
 
 # System Configuration
@@ -31,15 +46,16 @@ barostatInterval = 1000
 # Simulation Options
 
 run_number = 0
-while os.path.isfile('%s%03d.dcd'%(system_name,run_number)):
+while os.path.isfile('%s%03d.dcd'%(args.system_name,run_number)):
   run_number += 1
-run_name = '%s%03d'%(system_name,run_number)
+run_name = '%s%03d'%(args.system_name,run_number)
+checkpoint_FN = '%s.chk'%(args.system_name)
 print('Data will be stored with the prefix '+run_name)
 
-steps = int(100*unit.nanoseconds/dt)
+steps = int(args.simulation_time*unit.nanoseconds/dt)
 print('Simulation will run for %d steps\n'%steps)
 
-if os.path.isdir('/Users/dminh/'):
+if os.path.isdir('/Users/'):
   # On my laptop use CPU
   platform = mm.Platform.getPlatformByName('CPU')
   properties = {}
@@ -54,7 +70,7 @@ dataReporter = app.StateDataReporter(run_name+'.log', 1000, \
   elapsedTime=True, remainingTime=True, \
   potentialEnergy=True, kineticEnergy=True, totalEnergy=True, \
   temperature=True, volume=True, density=True, separator='\t')
-checkpointReporter = app.CheckpointReporter(system_name+'.chk', 5000)
+checkpointReporter = app.CheckpointReporter(checkpoint_FN, 10000)
 
 # Prepare the Simulation
 
@@ -74,14 +90,14 @@ simulation.context.setPositions(positions)
 
 # If there is a checkpoint, load it
 
-if not os.path.isfile(system_name+'.chk'):
+if not os.path.isfile(checkpoint_FN):
   print('Performing energy minimization...')
   simulation.minimizeEnergy()
-  simulation.currentStep = 0
 else:
   print('Loading from checkpoint')
-  with open(system_name+'.chk', 'rb') as f:
+  with open(checkpoint_FN, 'rb') as f:
     simulation.context.loadCheckpoint(f.read())
+simulation.currentStep = 0
 
 # Simulate
 
@@ -89,4 +105,4 @@ print('Simulating...')
 simulation.reporters.append(dcdReporter)
 simulation.reporters.append(dataReporter)
 simulation.reporters.append(checkpointReporter)
-simulation.step(steps-simulation.currentStep)
+simulation.step(steps)
