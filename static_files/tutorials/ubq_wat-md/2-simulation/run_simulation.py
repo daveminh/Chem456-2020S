@@ -7,11 +7,20 @@ import os
 
 # Argument parser
 
+description = """
+Runs an MD simulation in explicit solvent.
+
+Loads a .PDB file from from ../../1-model-water/[system_name].pdb.
+Stores simulation results in the local directory.
+
+When running on XSEDE, it is not recommended to use this script directly.
+Instead, use the submit_simulation.sh script,
+which will create a job file that executes this script.
+"""
+
 import argparse
 parser = argparse.ArgumentParser(\
-  description = 'Runs an MD simulation in explicit solvent.' + \
-    'Loads a .PDB file from from ../../1-model-water/[system_name].pdb.' + \
-    'Stores simulation results in the local directory.')
+  description = description)
 parser.add_argument('--system_name', \
   default='1ubq', \
   help='The name of the system.')
