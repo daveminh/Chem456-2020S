@@ -1,0 +1,68 @@
+2020-03-23 20:29:00,942 - DEBUG - yank.experiment - DSL string for the ligand: "resname LIG"
+2020-03-23 20:29:00,942 - DEBUG - yank.experiment - DSL string for the solvent: "resname HOH or resname NA or resname CL"
+2020-03-23 20:29:00,942 - INFO - yank.experiment - Reading phase complex
+2020-03-23 20:29:00,942 - DEBUG - yank.pipeline - prmtop: ../complexes/0-build/ZINC000001714738_complex.prmtop
+2020-03-23 20:29:00,942 - DEBUG - yank.pipeline - inpcrd: ../complexes/1-equilibrate/ZINC000001714738_complex.inpcrd
+2020-03-23 20:29:07,650 - DEBUG - mpiplus.mpiplus - Single node: executing <function find_alchemical_counterions at 0x1245f19e0>
+2020-03-23 20:29:07,656 - DEBUG - yank.pipeline - ligand_atoms net charge: 0
+2020-03-23 20:29:07,660 - WARNING - openmmtools.multistate.multistatesampler - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-23 20:29:07,661 - INFO - yank.experiment - Reading phase solvent
+2020-03-23 20:29:07,661 - DEBUG - yank.pipeline - prmtop: ../ligands/0-build/ZINC000001714738_solv.prmtop
+2020-03-23 20:29:07,661 - DEBUG - yank.pipeline - inpcrd: ../ligands/1-equilibrate/ZINC000001714738_solv.inpcrd
+2020-03-23 20:29:07,998 - DEBUG - mpiplus.mpiplus - Single node: executing <function find_alchemical_counterions at 0x1245f19e0>
+2020-03-23 20:29:07,999 - DEBUG - yank.pipeline - solute_atoms net charge: 0
+2020-03-23 20:29:08,000 - WARNING - openmmtools.multistate.multistatesampler - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-23 20:29:08,000 - DEBUG - mpiplus.mpiplus - Single node: executing <function ExperimentBuilder._save_analysis_script at 0x1262a09e0>
+2020-03-23 20:29:08,001 - DEBUG - yank.experiment - Generating alchemical path for .complex
+2020-03-23 20:29:10,094 - DEBUG - yank.yank - Creating receptor-ligand restraints...
+2020-03-23 20:29:10,094 - DEBUG - yank.yank - There are undefined restraint parameters. Trying automatic parametrization.
+2020-03-23 20:29:10,094 - DEBUG - yank.restraints - Restraint Harmonic: Automatically picked restrained ligand_atoms atom: ligand_atoms
+2020-03-23 20:29:10,102 - DEBUG - yank.restraints - Restraint Harmonic: Automatically picked restrained receptor_atoms atom: receptor_atoms
+2020-03-23 20:29:10,109 - DEBUG - yank.restraints - Spring constant sigma, s = 0.781 nm
+2020-03-23 20:29:10,109 - DEBUG - yank.restraints - K = 0.0 kcal/mol/A^2
+2020-03-23 20:29:12,246 - DEBUG - yank.restraints - Standard state correction: 1.509 kT
+2020-03-23 20:29:12,246 - DEBUG - openmmtools.utils - Restraint Harmonic: Computing standard state correction took    0.006s
+2020-03-23 20:29:12,247 - DEBUG - yank.yank - Creating alchemically-modified states...
+2020-03-23 20:29:12,889 - DEBUG - openmmtools.alchemy - Dictionary of interacting alchemical regions: frozenset()
+2020-03-23 20:29:12,889 - DEBUG - openmmtools.alchemy - Using 1 alchemical regions
+2020-03-23 20:29:18,605 - DEBUG - openmmtools.alchemy - Adding steric interaction groups between  and the environment.
+2020-03-23 20:29:18,630 - DEBUG - openmmtools.alchemy - Adding a steric interaction group between group  and .
+2020-03-23 20:29:19,704 - DEBUG - openmmtools.utils - Create alchemically modified system took    6.809s
+2020-03-23 20:29:25,120 - DEBUG - yank.yank - Creating expanded cutoff states...
+2020-03-23 20:29:25,771 - DEBUG - yank.yank - Setting cutoff for fully interacting system to 16 A. The minimum box dimension is 7.984298710000001 nm.
+2020-03-23 20:29:31,804 - DEBUG - yank.yank - Setting cutoff for fully interacting system to 16 A. The minimum box dimension is 7.984298710000001 nm.
+2020-03-23 20:29:34,446 - DEBUG - yank.yank - Creating sampler object...
+2020-03-23 20:29:34,446 - DEBUG - mpiplus.mpiplus - Single node: executing <bound method ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter.nothing of <yank.experiment.ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter object at 0x122709350>>
+2020-03-23 20:29:34,447 - DEBUG - mpiplus.mpiplus - Single node: executing <function ReplicaExchangeSampler._display_citations at 0x12453fcb0>
+2020-03-23 20:29:34,447 - DEBUG - mpiplus.mpiplus - Single node: executing <function MultiStateSampler._display_citations at 0x12425bef0>
+2020-03-23 20:29:34,448 - DEBUG - mpiplus.mpiplus - Single node: executing <function MultiStateSampler._initialize_reporter at 0x124260200>
+2020-03-23 20:29:34,448 - DEBUG - openmmtools.multistate.multistatesampler - Storing general ReplicaExchange options...
+2020-03-23 20:29:34,448 - DEBUG - mpiplus.mpiplus - Single node: executing <function MultiStateSampler._report_iteration at 0x124260320>
+2020-03-23 20:29:34,448 - DEBUG - mpiplus.mpiplus - Single node: executing <function MultiStateSampler._report_iteration_items at 0x1242605f0>
+2020-03-23 20:29:34,449 - DEBUG - openmmtools.utils - Writing iteration information to storage took    0.000s
+2020-03-23 20:29:34,711 - DEBUG - yank.yank - Minimizing 1 sampler states in the reference thermodynamic state
+2020-03-23 20:29:34,712 - DEBUG - mpiplus.mpiplus - Running _minimize_sampler_state serially.
+2020-03-23 20:29:35,794 - DEBUG - yank.yank - Sampler state 1/1: initial energy -2477060.629kT
+2020-03-23 20:29:35,794 - DEBUG - yank.yank - Using FIRE: tolerance 1.0 kJ/(nm mol) max_iterations 1000
+2020-03-23 20:30:50,156 - DEBUG - yank.yank - Sampler state 1/1: final energy -2552710.424kT
+2020-03-23 20:30:50,187 - DEBUG - mpiplus.mpiplus - Single node: executing <bound method ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter.nothing of <yank.experiment.ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter object at 0x122709350>>
+2020-03-23 20:30:50,187 - DEBUG - openmmtools.multistate.multistatesampler - Minimizing all replicas...
+2020-03-23 20:30:50,187 - DEBUG - mpiplus.mpiplus - Running _minimize_replica serially.
+2020-03-23 20:30:52,374 - DEBUG - openmmtools.multistate.multistatesampler - Replica 1/1: initial energy      nankT
+2020-03-23 20:30:52,374 - DEBUG - openmmtools.multistate.multistatesampler - Using FIRE: tolerance 1.0 kJ/(nm mol) max_iterations 1000
+2020-03-23 20:35:06,478 - DEBUG - openmmtools.multistate.multistatesampler - Replica 1/1: final energy      nankT
+2020-03-23 20:35:06,533 - DEBUG - mpiplus.mpiplus - Single node: executing <bound method ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter.nothing of <yank.experiment.ExperimentBuilder._generate_experiment_protocol.<locals>.DummyReporter object at 0x122709350>>
+2020-03-23 20:35:06,533 - DEBUG - openmmtools.utils - Minimizing all replicas took  256.346s
+2020-03-23 20:35:06,538 - DEBUG - yank.experiment - Using <openmmtools.mcmc.LangevinSplittingDynamicsMove object at 0x12b09ad10> for equilibration.
+2020-03-23 20:35:06,538 - DEBUG - openmmtools.multistate.multistatesampler - Equilibration iteration 0/1000
+2020-03-23 20:35:06,538 - DEBUG - openmmtools.multistate.multistatesampler - Propagating all replicas...
+2020-03-23 20:35:06,538 - DEBUG - mpiplus.mpiplus - Running _propagate_replica serially.
+2020-03-23 20:36:08,165 - WARNING - openmmtools.mcmc - Potential energy is NaN after 0 attempts of integration with move LangevinSplittingDynamicsMove Attempting a restart...
+2020-03-23 20:37:06,754 - WARNING - openmmtools.mcmc - Potential energy is NaN after 1 attempts of integration with move LangevinSplittingDynamicsMove Attempting a restart...
+2020-03-23 20:38:05,251 - WARNING - openmmtools.mcmc - Potential energy is NaN after 2 attempts of integration with move LangevinSplittingDynamicsMove Attempting a restart...
+2020-03-23 20:39:03,745 - WARNING - openmmtools.mcmc - Potential energy is NaN after 3 attempts of integration with move LangevinSplittingDynamicsMove Attempting a restart...
+2020-03-23 20:40:02,279 - WARNING - openmmtools.mcmc - Potential energy is NaN after 4 attempts of integration with move LangevinSplittingDynamicsMove Attempting a restart...
+2020-03-23 20:41:00,843 - ERROR - openmmtools.mcmc - Potential energy is NaN after 5 attempts of integration with move LangevinSplittingDynamicsMove Trying to reinitialize Context as a last-resort restart attempt...
+2020-03-23 20:42:00,213 - ERROR - openmmtools.mcmc - Potential energy is NaN after 6 attempts of integration with move LangevinSplittingDynamicsMove
+2020-03-23 20:42:02,400 - CRITICAL - openmmtools.multistate.multistatesampler - Propagating replica 0 at state 0 resulted in a NaN!
+The state of the system and integrator before the error were saved in ../output/ZINC000001714738/experiments/nan-error-logs
