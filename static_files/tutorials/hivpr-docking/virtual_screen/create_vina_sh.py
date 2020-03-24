@@ -37,15 +37,17 @@ lib_FNs = glob.glob(os.path.join(args.library,'*.pdbqt'))
 for n in range(args.nscripts):
   sh_F = open('script%d.sh'%n,'w')
   sh_F.write('#!/bin/bash\n')
-  sh_F.write('module load autodock/4.2.6\n')
+  # sh_F.write('module load autodock/4.2.6\n')
   for lib_FN in lib_FNs[n::args.nscripts]:
     out_FN = os.path.join(args.output, \
       os.path.basename(args.receptor)[:-6] + '_' + \
       os.path.basename(lib_FN)[:-6] + '.pdbqt')
+    # print out_FN
     if not os.path.isfile(out_FN):
-      sh_F.write('vina --config ' + args.config + \
+      sh_F.write('~/Applications/AutoDockVina/bin/vina --config ' + args.config + \
         ' --receptor ' + args.receptor + \
         ' --ligand ' + lib_FN + \
         ' --out ' + out_FN + \
+        ' --exhaustiveness 20' + \
         cpu_string + \
         '\n')

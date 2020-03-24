@@ -1,0 +1,17 @@
+3/7/2020
+* Opened 6hl1.pdb with VMD and separated out the ligand and receptor.
+
+set receptor [atomselect 0 "chain A"]
+$receptor writepdb receptor.pdb
+set ligand [atomselect 0 "chain C"]
+$ligand writepdb ligand.pdb
+
+* Used ADT to add hydrogens and create receptor.pdbqt and receptor.gpf.
+
+Grid center is -10, 12, 68 and points is 40 x 70 x 46
+
+* Created scripts to run AutoDock Vina and then ran it.
+
+python ../../hivpr-docking/virtual_screen/create_vina_sh.py --receptor receptor.pdbqt --config config.txt --library ../../hivpr-docking/virtual_screen/library/ --output docked --nscripts 1
+
+python ../../hivpr-docking/virtual_screen/create_vina_sh.py --receptor receptor.pdbqt --config config.txt --library jin_library/ --output docked --nscripts 1
