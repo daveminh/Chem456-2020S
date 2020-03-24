@@ -1,0 +1,27 @@
+2020-03-23 21:37:47,254 - DEBUG - yank.experiment - DSL string for the ligand: "resname UNL"
+2020-03-23 21:37:47,254 - DEBUG - yank.experiment - DSL string for the solvent: "auto"
+2020-03-23 21:37:47,255 - INFO - yank.experiment - Reading phase complex
+2020-03-23 21:37:47,255 - DEBUG - yank.pipeline - prmtop: ../output_GAFF/ZINC000002015152/setup/systems/rec-lig/complex.prmtop
+2020-03-23 21:37:47,255 - DEBUG - yank.pipeline - inpcrd: ../output_GAFF/ZINC000002015152/setup/systems/rec-lig/complex.inpcrd
+2020-03-23 21:38:01,081 - DEBUG - mpiplus.mpiplus - Single node: executing <function find_alchemical_counterions at 0x1214c89e0>
+2020-03-23 21:38:01,090 - DEBUG - yank.pipeline - ligand_atoms net charge: 0
+2020-03-23 21:38:01,092 - WARNING - openmmtools.multistate.multistatesampler - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-23 21:38:01,093 - INFO - yank.experiment - Reading phase solvent
+2020-03-23 21:38:01,093 - DEBUG - yank.pipeline - prmtop: ../output_GAFF/ZINC000002015152/setup/systems/rec-lig/solvent.prmtop
+2020-03-23 21:38:01,093 - DEBUG - yank.pipeline - inpcrd: ../output_GAFF/ZINC000002015152/setup/systems/rec-lig/solvent.inpcrd
+2020-03-23 21:38:01,903 - DEBUG - mpiplus.mpiplus - Single node: executing <function find_alchemical_counterions at 0x1214c89e0>
+2020-03-23 21:38:01,905 - DEBUG - yank.pipeline - solute_atoms net charge: 0
+2020-03-23 21:38:01,906 - WARNING - openmmtools.multistate.multistatesampler - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-23 21:38:01,906 - DEBUG - mpiplus.mpiplus - Single node: executing <function ExperimentBuilder._save_analysis_script at 0x1231779e0>
+2020-03-23 21:38:01,907 - DEBUG - yank.experiment - Generating alchemical path for .complex
+2020-03-23 21:38:05,943 - DEBUG - yank.yank - Creating receptor-ligand restraints...
+2020-03-23 21:38:05,943 - DEBUG - yank.yank - There are undefined restraint parameters. Trying automatic parametrization.
+2020-03-23 21:38:05,944 - DEBUG - yank.restraints - Restraint Harmonic: Automatically picked restrained ligand_atoms atom: ligand_atoms
+2020-03-23 21:38:05,960 - DEBUG - yank.restraints - Restraint Harmonic: Automatically picked restrained receptor_atoms atom: receptor_atoms
+2020-03-23 21:38:05,974 - DEBUG - yank.restraints - Spring constant sigma, s = 0.763 nm
+2020-03-23 21:38:05,975 - DEBUG - yank.restraints - K = 0.0 kcal/mol/A^2
+2020-03-23 21:38:10,359 - DEBUG - yank.restraints - Standard state correction: 1.437 kT
+2020-03-23 21:38:10,360 - DEBUG - openmmtools.utils - Restraint Harmonic: Computing standard state correction took    0.001s
+2020-03-23 21:38:10,360 - DEBUG - yank.yank - Creating alchemically-modified states...
+2020-03-23 21:38:11,729 - DEBUG - openmmtools.alchemy - Dictionary of interacting alchemical regions: frozenset()
+2020-03-23 21:38:11,729 - DEBUG - openmmtools.alchemy - Using 1 alchemical regions
