@@ -1,0 +1,29 @@
+
+# Load parameters
+loadAmberParams ../output_GAFF/ZINC000001714738/setup/molecules/ligand/ligand.frcmod
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+# Load molecules
+receptor = loadPdb ../receptor/6LU7.pdb
+ligand = loadMol2 ../output_GAFF/ZINC000001714738/setup/molecules/ligand/ligand.gaff.mol2
+
+# Create complex
+complex = combine { receptor ligand }
+
+# Solvate systems
+solvateBox complex TIP3PBOX 16.0 iso
+addIonsRand complex Na+ 0
+addIonsRand complex Cl- 0
+addIonsRand complex Na+ 115
+addIonsRand complex Cl- 115
+
+# Check charge
+check complex
+
+# Save prmtop and inpcrd files
+saveAmberParm complex ../output_GAFF/ZINC000001714738/setup/systems/rec-lig/complex.prmtop ../output_GAFF/ZINC000001714738/setup/systems/rec-lig/complex.inpcrd
+savePDB complex ../output_GAFF/ZINC000001714738/setup/systems/rec-lig/complex.pdb
+
+quit

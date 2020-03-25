@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#PBS -S /bin/bash
+#PBS -l mem=2GB,nodes=1:ppn=1,walltime=168:00:00
+#PBS -q default
+
+source ~/.bashrc
+module load miniconda/3
+conda activate yank
+
+# Run YANK based on YAML script
+cd /home/dminh/3cl-pro/YANK_GAFF/yaml
+yank script -y MPro_ZINC000003951740.yaml --setup-only

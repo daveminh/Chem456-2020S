@@ -1,0 +1,15 @@
+2020-03-24 20:49:32,069 - DEBUG - mpiplus.mpiplus - Running _setup_molecules serially.
+2020-03-24 20:51:31,775 - DEBUG - root - Fixing net charge from 0.0009980000000003736 to 2.3592239273284576e-16
+2020-03-24 20:51:31,783 - DEBUG - mpiplus.mpiplus - Running get_system serially.
+2020-03-24 20:51:31,784 - INFO - yank.pipeline - Setting up the systems for receptor and ligand using solvent pme
+2020-03-24 20:51:31,784 - DEBUG - yank.pipeline - Setting up solvent phase
+2020-03-24 20:51:31,785 - DEBUG - yank.pipeline - Estimating number of water molecules in the box.
+2020-03-24 20:51:33,580 - DEBUG - yank.pipeline - Estimated number of water molecules: 3092
+2020-03-24 20:51:33,581 - DEBUG - root - Adding 8 ions in 3092 water molecules to reach ionic strength of 0.15 M
+2020-03-24 20:51:34,688 - DEBUG - yank.pipeline - Setting up complex phase
+2020-03-24 20:51:34,688 - DEBUG - yank.pipeline - Estimating number of water molecules in the box.
+2020-03-24 20:55:51,719 - DEBUG - yank.pipeline - Estimated number of water molecules: 42396
+2020-03-24 20:55:51,720 - DEBUG - root - Adding 115 ions in 42396 water molecules to reach ionic strength of 0.15 M
+2020-03-24 22:43:41,862 - DEBUG - mpiplus.mpiplus - Node 1/1: waiting for barrier after _setup_molecules
+2020-03-24 22:43:41,882 - DEBUG - mpiplus.mpiplus - Node 1/1: waiting for barrier after get_system
+2020-03-24 22:43:41,884 - DEBUG - mpiplus.mpiplus - Group 1/1 Node 1/1: execute _generate_experiment_protocol(('', {'system': 'rec-lig', 'protocol': 'absolute-binding', 'restraint': {'type': 'Harmonic'}}))
