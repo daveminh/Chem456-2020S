@@ -1,0 +1,25 @@
+
+# Load parameters
+loadAmberParams ../output_GAFF/ZINC000003951740/setup/molecules/ligand/ligand.frcmod
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+# Load molecules
+ligand = loadMol2 ../output_GAFF/ZINC000003951740/setup/molecules/ligand/ligand.gaff.mol2
+
+# Solvate systems
+solvateBox ligand TIP3PBOX 16.0 iso
+addIonsRand ligand Na+ 0
+addIonsRand ligand Cl- 0
+addIonsRand ligand Na+ 11
+addIonsRand ligand Cl- 11
+
+# Check charge
+check ligand
+
+# Save prmtop and inpcrd files
+saveAmberParm ligand ../output_GAFF/ZINC000003951740/setup/systems/rec-lig/solvent.prmtop ../output_GAFF/ZINC000003951740/setup/systems/rec-lig/solvent.inpcrd
+savePDB ligand ../output_GAFF/ZINC000003951740/setup/systems/rec-lig/solvent.pdb
+
+quit
