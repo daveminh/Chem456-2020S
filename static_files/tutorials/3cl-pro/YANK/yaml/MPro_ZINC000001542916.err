@@ -1,0 +1,38 @@
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+2020-04-02 16:13:25,016: Setting OpenCL platform to use precision model 'mixed'.
+2020-04-02 16:13:25,805: Correctly recognized phase1_pathfiles (['../complexes/0-build/ZINC000001542916_complex.prmtop', '../complexes/1-equilibrate/ZINC000001542916_complex.inpcrd']) as amber files
+2020-04-02 16:13:25,807: Correctly recognized phase2_pathfiles (['../ligands/0-build/ZINC000001542916_solv.prmtop', '../ligands/1-equilibrate/ZINC000001542916_solv.inpcrd']) as amber files
+2020-04-02 16:13:25,810: ERROR - yank.experiment - System 'rec-lig' did not validate! Check the schema error below for details
+phase1_path:
+- 1:
+  - File path ../complexes/1-equilibrate/ZINC000001542916_complex.inpcrd does not
+    exist.
+phase2_path:
+- 1:
+  - File path ../ligands/1-equilibrate/ZINC000001542916_solv.inpcrd does not exist.
+
+Traceback (most recent call last):
+  File "/share/apps/miniconda3/envs/yank/bin/yank", line 11, in <module>
+    load_entry_point('yank==0.25.2', 'console_scripts', 'yank')()
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/cli.py", line 73, in main
+    dispatched = getattr(commands, command).dispatch(command_args)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/commands/script.py", line 147, in dispatch
+    yaml_builder = ExperimentBuilder(script=yaml_path, job_id=job_id, n_jobs=n_jobs)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/experiment.py", line 591, in __init__
+    self.parse(script)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/experiment.py", line 706, in parse
+    self._db.systems = self._validate_systems(yaml_content.get('systems', {}))
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/experiment.py", line 1810, in _validate_systems
+    raise YamlParseError(error.format(system_id, yaml.dump(system_validator.errors)))
+yank.experiment.YamlParseError: System 'rec-lig' did not validate! Check the schema error below for details
+phase1_path:
+- 1:
+  - File path ../complexes/1-equilibrate/ZINC000001542916_complex.inpcrd does not
+    exist.
+phase2_path:
+- 1:
+  - File path ../ligands/1-equilibrate/ZINC000001542916_solv.inpcrd does not exist.
+

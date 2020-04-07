@@ -1,8 +1,14 @@
-#!/bin/bash
-#
 #PBS -S /bin/bash
-#PBS -l mem=2GB,nodes=1:ppn=1,walltime=168:00:00
-#PBS -q default
+#PBS -o MPro_ZINC000013985228.out
+#PBS -e MPro_ZINC000013985228.err
+#PBS -q cuda
+#PBS -W x=GRES:gpus@1
+#PBS -l nodes=compute-1-8:ppn=1:gpus,walltime=168:00:00
+#PBS -r y
+
+export CUDA_VISIBLE_DEVICES=1
+
+echo Running on compute-1-0, targeting device 1
 
 source ~/.bashrc
 module load miniconda/3
@@ -10,4 +16,4 @@ conda activate yank
 
 # Run YANK based on YAML script
 cd /home/dminh/3cl-pro/YANK_GAFF/yaml
-yank script -y MPro_ZINC000013985228.yaml --setup-only
+yank script -y MPro_ZINC000013985228.yaml 

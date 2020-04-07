@@ -14,7 +14,7 @@ def get_onq():
 
   stdoutdata = stdoutdata.decode()
   stderrdata = stderrdata.decode()
-  
+
   jobs = [job.strip().split('    ') for job in stdoutdata.split('Job Id:')]
   jobs = [dict([[f.replace('\n\t','').strip() for f in field.split(' = ')]
     for field in job if field.find(' = ')>-1])
@@ -67,7 +67,7 @@ def node_gpu_status(node):
 
   stdoutdata = stdoutdata.decode()
   stderrdata = stderrdata.decode()
-  
+
   if stdoutdata=="":
     return []
 
@@ -148,9 +148,9 @@ parser.add_argument('--type', \
     "'CCB-CPU' is a CPU calculation on CCB." + \
     "'CCB-GPU' is a GPU calculation on CCB.")
 parser.add_argument('--yaml', \
-  default='1ubq', \
+  default='MPro_ZINC000002015152.yaml', \
   help='The yaml script for the YANK job.')
-parser.add_argument('--dry', 
+parser.add_argument('--dry',
   action='store_true', \
   help='Creates script but does not submit it.')
 parser.add_argument('--setup_only', \
@@ -198,9 +198,9 @@ if os.path.exists('/share/apps/miniconda3'): # CCB Cluster
   wall_time = '168:00:00'
 
   if args.type=='CCB-CPU':
-    submit_script = f'''#!/bin/bash
-#
-#PBS -S /bin/bash
+    submit_script = f'''#PBS -S /bin/bash
+#PBS -o {job_name}.out
+#PBS -e {job_name}.err
 #PBS -l mem=2GB,nodes=1:ppn=1,walltime={wall_time}
 #PBS -q default
 
@@ -209,7 +209,8 @@ module load miniconda/3'''
   elif args.type=='CCB-GPU':
     (node, device) = pickGPU()
     submit_script = f'''#PBS -S /bin/bash
-#PBS -j oe
+#PBS -o {job_name}.out
+#PBS -e {job_name}.err
 #PBS -q cuda
 #PBS -W x=GRES:gpus@1
 #PBS -l nodes=compute-1-{node}:ppn=1:gpus,walltime={wall_time}

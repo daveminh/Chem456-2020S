@@ -1,0 +1,115 @@
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+2020-03-25 13:45:13,270: Setting OpenCL platform to use precision model 'mixed'.
+2020-03-25 13:45:14,179: Single node: executing <function ExperimentBuilder._check_resume at 0x2b37421dab90>
+2020-03-25 13:45:14,187: Running _setup_molecules serially.
+2020-03-25 13:45:14,188: Running get_system serially.
+2020-03-25 13:45:14,188: Running _generate_experiment_protocol serially.
+2020-03-25 13:45:14,194: DSL string for the ligand: "resname UNL"
+2020-03-25 13:45:14,194: DSL string for the solvent: "auto"
+2020-03-25 13:45:14,261: Single node: executing <function ExperimentBuilder._save_analysis_script at 0x2b37422083b0>
+2020-03-25 13:45:14,263: WARNING - openmmtools.multistate.multistatereporter - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-25 13:45:14,263: Initial checkpoint file automatically chosen as ../output_GAFF/ZINC000002015152/experiments/complex_checkpoint.nc
+2020-03-25 13:45:14,473: analysis_particle_indices != on-file analysis_particle_indices!Using on file analysis indices of [   0    1    2 ... 4954 4955 4956]
+2020-03-25 13:45:14,511: WARNING - openmmtools.multistate.multistatereporter - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-25 13:45:14,511: Initial checkpoint file automatically chosen as ../output_GAFF/ZINC000002015152/experiments/complex_checkpoint.nc
+2020-03-25 13:45:14,983: analysis_particle_indices != on-file analysis_particle_indices!Using on file analysis indices of [   0    1    2 ... 4954 4955 4956]
+2020-03-25 13:45:15,022: WARNING - openmmtools.multistate.multistatereporter - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-25 13:45:15,023: Initial checkpoint file automatically chosen as ../output_GAFF/ZINC000002015152/experiments/complex_checkpoint.nc
+2020-03-25 13:45:15,437: analysis_particle_indices != on-file analysis_particle_indices!Using on file analysis indices of [   0    1    2 ... 4954 4955 4956]
+2020-03-25 13:45:15,476: WARNING - openmmtools.multistate.multistatereporter - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-25 13:45:15,476: Initial checkpoint file automatically chosen as ../output_GAFF/ZINC000002015152/experiments/complex_checkpoint.nc
+2020-03-25 13:45:15,858: analysis_particle_indices != on-file analysis_particle_indices!Using on file analysis indices of [   0    1    2 ... 4954 4955 4956]
+2020-03-25 13:45:16,109: WARNING - openmmtools.multistate.multistatesampler - Warning: The openmmtools.multistate API is experimental and may change in future releases
+2020-03-25 13:45:16,131: Single node: executing <function ReplicaExchangeSampler._display_citations at 0x2b373fd48b00>
+2020-03-25 13:45:16,131: Single node: executing <function MultiStateSampler._display_citations at 0x2b373fce8ef0>
+2020-03-25 13:45:16,131: Reading storage file ../output_GAFF/ZINC000002015152/experiments/complex.nc...
+2020-03-25 13:46:27,135: Reading thermodynamic states from storage took   53.524s
+2020-03-25 13:47:13,630: read_replica_thermodynamic_states: iteration = 0
+2020-03-25 13:47:13,654: Single node: executing <bound method MultiStateReporter.open of <openmmtools.multistate.multistatereporter.MultiStateReporter object at 0x2b373e274d90>>
+2020-03-25 13:47:13,834: Single node: executing <bound method MultiStateSampler._store_options of <instance of ReplicaExchangeSampler>>
+2020-03-25 13:47:13,834: Storing general ReplicaExchange options...
+2020-03-25 13:47:13,839: Running _compute_replica_energies serially.
+2020-03-25 13:48:56,396: Computing energy matrix took  102.559s
+2020-03-25 13:48:56,397: Single node: executing <bound method MultiStateReporter.write_energies of <openmmtools.multistate.multistatereporter.MultiStateReporter object at 0x2b373e274d90>>
+2020-03-25 13:48:56,421: CRITICAL - openmmtools.multistate.multistatesampler - NaN encountered in unsampled thermodynamic state energies for the following replicas and states
+	Energies for positions at replica 0 (current state 0): [6.74602319e+08            nan] kT
+	Energies for positions at replica 1 (current state 1): [6.32267612e+09            nan] kT
+	Energies for positions at replica 2 (current state 2): [2.35721671e+10            nan] kT
+	Energies for positions at replica 3 (current state 3): [4.04204542e+10            nan] kT
+	Energies for positions at replica 4 (current state 4): [2.18721014e+13            nan] kT
+	Energies for positions at replica 5 (current state 5): [6.70555863e+08            nan] kT
+	Energies for positions at replica 6 (current state 6): [2.31289681e+11            nan] kT
+	Energies for positions at replica 7 (current state 7): [2.22155771e+09            nan] kT
+	Energies for positions at replica 8 (current state 8): [1.64072261e+08            nan] kT
+	Energies for positions at replica 9 (current state 9): [2.14516178e+08            nan] kT
+	Energies for positions at replica 10 (current state 10): [9.68685417e+12            nan] kT
+	Energies for positions at replica 11 (current state 11): [6943984.05442004              nan] kT
+	Energies for positions at replica 12 (current state 12): [4.50905398e+12            nan] kT
+	Energies for positions at replica 13 (current state 13): [2.20374314e+12            nan] kT
+	Energies for positions at replica 14 (current state 14): [-406919.62005085              nan] kT
+	Energies for positions at replica 15 (current state 15): [-709112.80660878              nan] kT
+	Energies for positions at replica 16 (current state 16): [1.99735662e+10            nan] kT
+	Energies for positions at replica 17 (current state 17): [-607220.60465622              nan] kT
+	Energies for positions at replica 18 (current state 18): [-687894.4860941             nan] kT
+	Energies for positions at replica 19 (current state 19): [1267909.38913488              nan] kT
+	Energies for positions at replica 20 (current state 20): [-416756.53904151              nan] kT
+	Energies for positions at replica 21 (current state 21): [-724838.51098529              nan] kT
+	Energies for positions at replica 22 (current state 22): [-583018.01343914              nan] kT
+	Energies for positions at replica 23 (current state 23): [91110730.01586123               nan] kT
+	Energies for positions at replica 24 (current state 24): [-723685.43051894              nan] kT
+	Energies for positions at replica 25 (current state 25): [-724869.59853819              nan] kT
+	Energies for positions at replica 26 (current state 26): [-723762.01518073              nan] kT
+	Energies for positions at replica 27 (current state 27): [-727885.10163067              nan] kT
+	Energies for positions at replica 28 (current state 28): [-726646.93430231              nan] kT
+	Energies for positions at replica 29 (current state 29): [-725411.59873677              nan] kT
+	Energies for positions at replica 30 (current state 30): [-725993.37694561              nan] kT
+	Energies for positions at replica 31 (current state 31): [-727189.01892436              nan] kT
+	Energies for positions at replica 32 (current state 32): [-727039.17662598              nan] kT
+	Energies for positions at replica 33 (current state 33): [-726672.80666013              nan] kT
+	Energies for positions at replica 34 (current state 34): [-726134.09637802              nan] kT
+	Energies for positions at replica 35 (current state 35): [-726846.60134881              nan] kT
+	Energies for positions at replica 36 (current state 36): [-726908.00820942              nan] kT
+	Energies for positions at replica 37 (current state 37): [-727319.82634891              nan] kT
+	Energies for positions at replica 38 (current state 38): [-727119.98081766              nan] kT
+	Energies for positions at replica 39 (current state 39): [-727221.3231681             nan] kT
+	Energies for positions at replica 40 (current state 40): [-727448.29295483              nan] kT
+	Energies for positions at replica 41 (current state 41): [-726936.44417295              nan] kT
+	Energies for positions at replica 42 (current state 42): [-726777.66115438              nan] kT
+	Energies for positions at replica 43 (current state 43): [-727179.70868287              nan] kT
+	Energies for positions at replica 44 (current state 44): [-727549.42218661              nan] kT
+	Energies for positions at replica 45 (current state 45): [-726150.00415107              nan] kT
+	Energies for positions at replica 46 (current state 46): [-727641.57852925              nan] kT
+	Energies for positions at replica 47 (current state 47): [-726801.31259212              nan] kT
+	Energies for positions at replica 48 (current state 48): [-727329.60850855              nan] kT
+	Energies for positions at replica 49 (current state 49): [-726999.49444091              nan] kT
+	Energies for positions at replica 50 (current state 50): [-726372.73161023              nan] kT
+	Energies for positions at replica 51 (current state 51): [-727734.86939958              nan] kT
+	Energies for positions at replica 52 (current state 52): [-727503.09215689              nan] kT
+	Energies for positions at replica 53 (current state 53): [-726843.13913908              nan] kT
+	Energies for positions at replica 54 (current state 54): [-727456.52775405              nan] kT
+	Energies for positions at replica 55 (current state 55): [-726588.44159511              nan] kT
+	Energies for positions at replica 56 (current state 56): [-726861.2651835             nan] kT
+	Energies for positions at replica 57 (current state 57): [-725860.10220062              nan] kT
+	Energies for positions at replica 58 (current state 58): [-727221.95534791              nan] kT
+	Energies for positions at replica 59 (current state 59): [-727114.2427946             nan] kT
+	Energies for positions at replica 60 (current state 60): [-727965.9627141             nan] kT
+	Energies for positions at replica 61 (current state 61): [-726218.83280161              nan] kT
+	Energies for positions at replica 62 (current state 62): [-726934.90809128              nan] kT
+	Energies for positions at replica 63 (current state 63): [-726845.47350646              nan] kT
+	Energies for positions at replica 64 (current state 64): [-726624.36405918              nan] kT
+	Energies for positions at replica 65 (current state 65): [-727693.13109078              nan] kT
+	Energies for positions at replica 66 (current state 66): [-726811.85516341              nan] kT
+2020-03-25 13:48:56,422: CRITICAL - yank.experiment - 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!     CRITICAL: Experiment NaN    !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The following experiment threw a NaN! It should NOT be considered!
+Experiment: ../output_GAFF/ZINC000002015152/experiments/
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+2020-03-25 13:48:56,422: Single node: executing <bound method MultiStateReporter.close of <openmmtools.multistate.multistatereporter.MultiStateReporter object at 0x2b373e274d90>>

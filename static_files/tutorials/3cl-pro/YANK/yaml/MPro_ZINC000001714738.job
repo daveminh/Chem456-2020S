@@ -1,11 +1,12 @@
 #PBS -S /bin/bash
-#PBS -j oe
+#PBS -o MPro_ZINC000001714738.out
+#PBS -e MPro_ZINC000001714738.err
 #PBS -q cuda
 #PBS -W x=GRES:gpus@1
 #PBS -l nodes=compute-1-8:ppn=1:gpus,walltime=168:00:00
 #PBS -r y
 
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=0
 
 echo Running on compute-1-0, targeting device 1
 

@@ -1,8 +1,9 @@
 #PBS -S /bin/bash
-#PBS -j oe
+#PBS -o MPro_ZINC000003951740.out
+#PBS -e MPro_ZINC000003951740.err
 #PBS -q cuda
 #PBS -W x=GRES:gpus@1
-#PBS -l nodes=compute-1-7:ppn=1:gpus,walltime=168:00:00
+#PBS -l nodes=compute-1-8:ppn=1:gpus,walltime=168:00:00
 #PBS -r y
 
 export CUDA_VISIBLE_DEVICES=0

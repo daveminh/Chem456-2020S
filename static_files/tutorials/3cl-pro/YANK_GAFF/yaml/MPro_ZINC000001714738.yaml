@@ -4,7 +4,7 @@ options:
   verbose: yes
   temperature: 300*kelvin
   pressure: 1.0*atmosphere # To run with NVT ensemble, set this option to "null". Defaults to 1 atm if excluded
-  default_number_of_iterations: 10
+  default_number_of_iterations: 100
   default_nsteps_per_iteration: 500 # 500 steps x 2 fs = 1 ps
   default_timestep: 2.0*femtosecond
   platform: fastest # Use CUDA on Bridges

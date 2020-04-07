@@ -1,0 +1,136 @@
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+2020-04-02 16:17:19,797: Setting OpenCL platform to use precision model 'mixed'.
+2020-04-02 16:17:20,644: Single node: executing <function ExperimentBuilder._check_resume at 0x2b1cdb2b8b90>
+2020-04-02 16:17:20,646: Running _setup_molecules serially.
+Traceback (most recent call last):
+  File "/share/apps/miniconda3/envs/yank/bin/yank", line 11, in <module>
+    load_entry_point('yank==0.25.2', 'console_scripts', 'yank')()
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/cli.py", line 73, in main
+    dispatched = getattr(commands, command).dispatch(command_args)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/commands/script.py", line 155, in dispatch
+    yaml_builder.run_experiments(write_status=write_status)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/experiment.py", line 737, in run_experiments
+    self._setup_experiments()
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/experiment.py", line 2325, in _setup_experiments
+    self._db.setup_all_systems()
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/pipeline.py", line 1385, in setup_all_systems
+    send_results_to=None, group_size=1, sync_nodes=True)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/mpiplus/mpiplus.py", line 512, in distribute
+    all_results = [task(job_args, *other_args, **kwargs) for job_args in distributed_args]
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/mpiplus/mpiplus.py", line 512, in <listcomp>
+    all_results = [task(job_args, *other_args, **kwargs) for job_args in distributed_args]
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/yank/pipeline.py", line 1697, in _setup_molecules
+    gaff_version=gaff)
+  File "/share/apps/miniconda3/envs/yank/lib/python3.7/site-packages/openmoltools/amber.py", line 372, in run_antechamber
+    raise Exception(msg)
+Exception: antechamber failed to produce output mol2 file
+command: antechamber -i in.mol2 -fi mol2 -o out.mol2 -fo mol2 -s 2 -at gaff -c bcc
+output:
+--------------------------------------------------------------------------------
+
+Welcome to antechamber 19.0: molecular input file processor.
+
+acdoctor mode is on: check and diagnose problems in the input file.
+-- Check Format for mol2 File --
+   Status: pass
+Info: Finished reading file (in.mol2); atoms read (34), bonds read (34).
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+Warning: The number of bonds (3) for atom (ID: 3, Name: N1) does not match
+         the connectivity (2) for atom type (N.ar) defined in CORR_NAME_TYPE.DAT.
+Warning: The number of bonds (3) for atom (ID: 6, Name: N2) does not match
+         the connectivity (2) for atom type (N.ar) defined in CORR_NAME_TYPE.DAT.
+But, you may safely ignore the warnings if your molecule
+         uses atom names or element names as atom types.
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+antechamber: Fatal Error!
+Weird atomic valence (5) for atom (ID: 4, Name: C1).
+       Possible open valence.--------------------------------------------------------------------------------
+input mol2:
+--------------------------------------------------------------------------------
+@<TRIPOS>MOLECULE
+=
+ 34 34 0 0 0
+SMALL
+GASTEIGER
+
+@<TRIPOS>ATOM
+      1  N         -8.5630   15.9220   66.1250 N.am    1  UNL1       -0.2968
+      2  C         -9.9610   15.7700   66.0200 C.2     1  UNL1        0.3224
+      3  N        -10.5960   14.8290   65.1530 N.ar    1  UNL1       -0.2203
+      4  C        -11.6020   15.3130   64.3920 C.ar    1  UNL1        0.3373
+      5  O        -11.6130   16.5020   63.9580 O.2     1  UNL1       -0.2460
+      6  N        -12.4430   14.4340   63.8250 N.ar    1  UNL1       -0.2722
+      7  C        -12.1960   13.1020   63.8010 C.ar    1  UNL1        0.2894
+      8  O        -13.2280   12.1620   63.7180 O.2     1  UNL1       -0.2646
+      9  C        -10.9770   12.6770   64.3140 C.ar    1  UNL1        0.2040
+     10  F        -10.5050   11.4830   63.8530 F       1  UNL1       -0.1983
+     11  C        -10.1830   13.5480   65.0450 C.ar    1  UNL1        0.0594
+     12  O        -10.6750   16.4140   66.8340 O.2     1  UNL1       -0.2491
+     13  C         -8.0230   17.2220   66.4530 C.3     1  UNL1        0.0133
+     14  C         -7.7680   17.3780   67.9360 C.3     1  UNL1       -0.0373
+     15  C         -7.9580   18.7930   68.4150 C.3     1  UNL1       -0.0517
+     16  C         -9.4480   19.1000   68.4340 C.3     1  UNL1       -0.0533
+     17  C        -10.5230   19.8410   66.3160 C.3     1  UNL1       -0.0653
+     18  C         -9.7130   20.2790   67.5080 C.3     1  UNL1       -0.0559
+     19 H          -7.9642   15.1547   65.9772 H       1  UNL1        0.1504
+     20 H         -13.2706   14.7698   63.4109 H       1  UNL1        0.1735
+     21 H          -9.3084   13.2287   65.4902 H       1  UNL1        0.0847
+     22 H          -8.7194   17.9726   66.1424 H       1  UNL1        0.0462
+     23 H          -7.0863   17.3257   65.9462 H       1  UNL1        0.0462
+     24 H          -6.7617   17.0791   68.1432 H       1  UNL1        0.0280
+     25 H          -8.4780   16.7653   68.4512 H       1  UNL1        0.0280
+     26 H          -7.4587   19.4686   67.7523 H       1  UNL1        0.0266
+     27 H          -7.5477   18.9060   69.3967 H       1  UNL1        0.0266
+     28 H          -9.9964   18.2457   68.0958 H       1  UNL1        0.0265
+     29 H          -9.7591   19.3399   69.4293 H       1  UNL1        0.0265
+     30 H         -10.6997   20.6807   65.6768 H       1  UNL1        0.0230
+     31 H         -11.4588   19.4421   66.6478 H       1  UNL1        0.0230
+     32 H          -9.9859   19.0890   65.7766 H       1  UNL1        0.0230
+     33 H         -10.2524   21.0326   68.0428 H       1  UNL1        0.0263
+     34 H          -8.7767   20.6684   67.1664 H       1  UNL1        0.0263
+@<TRIPOS>BOND
+     1     8     7    2
+     2     7     6   ar
+     3     7     9   ar
+     4     6     4   ar
+     5    10     9    1
+     6     5     4    2
+     7     9    11   ar
+     8     4     3   ar
+     9    11     3   ar
+    10     3     2   am
+    11     2     1   am
+    12     2    12    2
+    13     1    13    1
+    14    17    18    1
+    15    13    14    1
+    16    18    16    1
+    17    14    15    1
+    18    15    16    1
+    19     1    19    1
+    20     6    20    1
+    21    11    21    1
+    22    13    22    1
+    23    13    23    1
+    24    14    24    1
+    25    14    25    1
+    26    15    26    1
+    27    15    27    1
+    28    16    28    1
+    29    16    29    1
+    30    17    30    1
+    31    17    31    1
+    32    17    32    1
+    33    18    33    1
+    34    18    34    1
+--------------------------------------------------------------------------------
+

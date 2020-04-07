@@ -1,18 +1,19 @@
-#!/bin/bash
-#SBATCH -N 1
-#SBATCH -p GPU-shared
-#SBATCH --ntasks-per-node 1
-#SBATCH --gres=gpu:p100:1
-#SBATCH -t 48:00:00
+#PBS -S /bin/bash
+#PBS -o MPro_ZINC000001714738.out
+#PBS -e MPro_ZINC000001714738.err
+#PBS -q cuda
+#PBS -W x=GRES:gpus@1
+#PBS -l nodes=compute-1-8:ppn=1:gpus,walltime=168:00:00
+#PBS -r y
 
-#echo commands to stdout
-set -x
+export CUDA_VISIBLE_DEVICES=1
 
-# Set up the environment
+echo Running on compute-1-0, targeting device 1
+
 source ~/.bashrc
-module load anaconda3
+module load miniconda/3
 conda activate yank
 
 # Run YANK based on YAML script
-cd /pylon5/mc4s8bp/dminh/3cl-pro/YANK_GAFF/yaml
+cd /home/dminh/3cl-pro/YANK_GAFF/yaml
 yank script -y MPro_ZINC000001714738.yaml 
