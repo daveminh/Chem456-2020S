@@ -34,6 +34,20 @@ On March 10, teams will be randomly selected to present. Teams can present using
 
 The presentation will be evaluated according to the following 100 point rubric: Does the presentation clearly address the scientific rationale of the project? [20 pts] Were structural alignment, electrostatics, or structural prediction calculations included and clearly explained? [10 pts] Were molecular docking calculations and analyses included and clearly described [25 pts]? Were molecular dynamics simulations and analyses included (at a minimum the equilibration time) and clearly described [25 pts]? Was the presentation clear and concise (between 10 and 15 minutes)? [10 pts] Were references properly cited? [10 pts].
 
-* **Final Review Presentation File**. Teams are required to give a final presentation (a 20 minute overview) about their project.
-* **Final Report File**. Teams are required to create a final report or other document that captures a team’s project work in the format of a scientific journal.
-* **Project Data**. Calculation results should be stored in a well-organized format and properly documented.
+* **Final Presentation File**. Teams are required to give a final presentation (a 20-30 minute overview) about their project.
+
+In the presentation, teams should describe the scientific background information, key calculations performed, scientific understanding gained, predictions made, and what additional calculations could potentially be done what they would expect to learn from them. In addition to calculations from the previous presentation, the final presentation should include binding free energy calculations.
+
+All the presentations should be uploaded as a PDF file named XXXX.pdf (where XXXX is the 4-letter PDB ID) to the FinalPresentations directory on Google Drive by midnight on April 27.
+
+On April 28, two teams will be randomly selected to present. On April 30, the other two teams will present.
+
+The presentation will be evaluated according to the following 100 point rubric: Does the presentation clearly address the background and scientific rationale of the project? [20 pts] Were calculations, including binding free energy calculations, carefully analyzed and clearly explained? [60 pts] Was the presentation clear and concise (between 20 and 30 minutes)? [10 pts] Were references properly cited? [10 pts].
+
+* **Final Report File**. Teams are required to create a final report that captures a team’s project work in the format of a scientific journal, the Journal of Chemical Information and Modelling. The document should be prepared for submission according to [the journal's author guidelines](https://pubs.acs.org/page/jcisd8/submission/authors.html).
+
+The report will be evaluated according to the following 100 point rubric: Does the abstract clearly describe the main findings of the study [10 pts]? Does the introduction clearly describe the rationale for the study [15 pts]? Are methods described in sufficient detail so that the study is reproducible [15 pts]? Are the results, including figures and tables, clearly presented and described [15 pts]? Does the discussion clearly explain the implications of the results in light of previous scientific knowledge [10 pts]? Are conclusions justified by the the data [10 pts]? Are references properly cited [10 pts]? Are project data stored in a well-organized format [15 pts]?
+
+Teams are highly encouraged to submit a draft of their report by midnight on April 27. The final report is due at midnight on May 7.
+
+* **Project Data**. Key calculation results should be stored in a well-organized format and properly documented.
