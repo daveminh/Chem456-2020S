@@ -1,6 +1,6 @@
 # Chem 456 course resource page
 
-The code resource page is at [https://daveminh.github.io/Chem456/](https://daveminh.github.io/Chem456/).
+The code resource page is at [https://daveminh.github.io/Chem456/](https://daveminh.github.io/Chem456-2020S/).
 
 Here is the Github code for the resource page. It is based on [a jekyll course template](https://github.com/kazemnejad/jekyll-course-website-template).
 
